@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(cp \"/Users/suncuiling/.claude/projects/-Users-suncuiling-Desktop-cuilingsun-github-io/deaee408-510a-48fe-9565-d4ba4eaf4315/tool-results/webfetch-1779384793085-11omcp.bin\" /tmp/design.gz)",
+      "Bash(gunzip -f /tmp/design.gz)",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p /tmp/design_extracted)",
+      "Bash(tar -xf /tmp/design -C /tmp/design_extracted)",
+      "Bash(ls /tmp/design_extracted/personal-website/project/uploads/)",
+      "Read(//private/tmp/design_extracted/personal-website/project/uploads/**)",
+      "Bash(identify /Users/suncuiling/Desktop/cuilingsun.github.io/images/bio-photo.jpg)",
+      "Bash(cp /tmp/design_extracted/personal-website/project/styles-soft.css /Users/suncuiling/Desktop/cuilingsun.github.io/styles-soft.css)",
+      "Bash(cp /tmp/design_extracted/personal-website/project/app.js /Users/suncuiling/Desktop/cuilingsun.github.io/app.js)",
+      "Bash(cp /tmp/design_extracted/personal-website/project/index-soft.html /Users/suncuiling/Desktop/cuilingsun.github.io/index.html && echo \"done\")",
+      "Bash(open /Users/suncuiling/Desktop/cuilingsun.github.io/index.html)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp/design_extracted/personal-website/project"
+    ]
+  }
+}
